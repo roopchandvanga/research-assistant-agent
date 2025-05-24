@@ -50,6 +50,7 @@ pip install -r requirements.txt
 ```
 
 ### 4. Set OpenAI API Key
+Create a folder named 'data'.
 Create `.env` file or edit `config.py`:
 ```bash
 OPENAI_API_KEY = "your-openai-api-key"
