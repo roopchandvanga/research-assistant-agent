@@ -26,7 +26,8 @@ def is_relevant_to_query(abstract: str, query: str) -> bool:
     Answer:
     """
 
-    response = llm([HumanMessage(content=prompt)])
+    response = llm.invoke([HumanMessage(content=prompt)])
+
     content = response.content.strip().lower()
 
     if content.startswith("yes"):
