@@ -25,3 +25,14 @@ def save_results_to_csv(results: List[dict], output_path: str = "data/results.cs
     df = pd.DataFrame(results)
     df.to_csv(output_path, index=False)
     print(f"Saved {len(results)} papers to {output_path}")
+
+import pandas as pd
+import io
+from typing import List
+
+def get_csv_download_link(results: List[dict]) -> bytes:
+    df = pd.DataFrame(results)
+    buffer = io.StringIO()
+    df.to_csv(buffer, index=False)
+    return buffer.getvalue().encode("utf-8")
+
