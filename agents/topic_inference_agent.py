@@ -15,5 +15,5 @@ def infer_topic(text: str) -> str:
 
     Topic:
     """
-    response = llm([HumanMessage(content=prompt)])
+    response = llm.invoke([HumanMessage(content=prompt)])
     return response.content.strip()

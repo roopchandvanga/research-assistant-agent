@@ -1,5 +1,11 @@
 from transformers import PegasusTokenizer, PegasusForConditionalGeneration
 import torch
+import warnings
+from transformers import logging as hf_logging
+
+warnings.filterwarnings("ignore")
+hf_logging.set_verbosity_error()
+
 
 model_name = "google/pegasus-xsum"
 tokenizer = PegasusTokenizer.from_pretrained(model_name)
