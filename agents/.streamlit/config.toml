@@ -1,2 +1,5 @@
 [server]
-watchFileSystem = false
+runOnSave = false
+
+[global]
+disableWatchdogWarning = true
