@@ -2,6 +2,9 @@
 
 This is lightweight AI research assistant agent that helps researchers find and understand the most relevant academic papers on arXiv. It fetches research paper abstracts, summarizes them, infers their topic, and filters out those that don’t match the user’s intent — providing a smarter and more semantic alternative to basic keyword-based search.
 
+[🌐 View the Live App on hosted on Streamlit](https://research-assistant-agent-gyhymztxkt68zthbafj7co.streamlit.app/)
+
+
 ---
 
 ## ✨ Features
